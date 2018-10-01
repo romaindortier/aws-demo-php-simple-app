@@ -1,0 +1,25 @@
+{
+  "family": "first-run-task-definition",
+  "containerDefinitions": [
+    {
+      "name": "first-run-task-definition",
+      "image": "centos:6",
+      "cpu": 100,
+      "memory": 128,
+      "environment": [],
+      "command": [],
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "volumesFrom": [],
+      "links": [],
+      "mountPoints": [],
+      "essential": true
+    }
+  ],
+  "volumes": []
+}
