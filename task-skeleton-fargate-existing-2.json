@@ -1,4 +1,5 @@
-{
+[
+  {
   "taskDefinition": {
     "family": "hello-world",
     "containerDefinitions": [
@@ -19,3 +20,4 @@
     ]
   }
 }
+]
