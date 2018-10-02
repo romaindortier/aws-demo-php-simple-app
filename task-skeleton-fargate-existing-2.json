@@ -1,25 +1,21 @@
 {
-  "family": "nginx",
-  "containerDefinitions": [
-    {
-      "name": "mynginx",
-      "image": "nginx",
-      "cpu": 100,
-      "memory": 128,
-      "environment": [],
-      "command": [],
-      "portMappings": [
-        {
-          "hostPort": 80,
-          "containerPort": 80,
-          "protocol": "tcp"
-        }
-      ],
-      "volumesFrom": [],
-      "links": [],
-      "mountPoints": [],
-      "essential": true
-    }
-  ],
-  "volumes": []
+  "taskDefinition": {
+    "family": "hello-world",
+    "containerDefinitions": [
+      {
+        "name": "hello-world",
+        "image": "012345678910.dkr.ecr.us-west-2.amazonaws.com/hello-world:6a57b99",
+        "cpu": 100,
+        "portMappings": [
+          {
+            "protocol": "tcp",
+            "containerPort": 80,
+            "hostPort": 80
+          }
+        ],
+        "memory": 128,
+        "essential": true
+      }
+    ]
+  }
 }
